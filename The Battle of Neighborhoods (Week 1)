@@ -1,0 +1,25 @@
+Introduction
+
+Singapore is a small country but now becomes one of the most popular countries in East Asia. There are a lot of websites where travelers can check and retrieve recommendations of places to stay or visit like Airbnb and Booking. However, most of these websites provides recommendation simply based on usual tourist attractions or key residential areas that are mostly expensive or already known for travelers based on certain keywords like "Hotel", or "Backpackers" etc. 
+
+The intention of this project is to collect data from Singapore open data sources and FourSquare API venue recommendations and provide a data driven recommendation that can supplement the recommendation with statistical data.
+
+The sample recommender system provides the following use case scenario: A person planning to visit Singapore as a Tourist and looking for a reasonable accommodation. The person wants to receive venue recommendation where he/she can stay or rent an HDB apartment with close proximity to places of interest or search category option. The recommendation should not only present the most viable option, but also present a comparison table of all possible town venues.
+
+The data used will include: Singapore Median Rental Prices by town. Popular Food venues in the vicinity. Food Venue Category. Outdoors and Recreation Nightlife Nearby Schools.
+
+
+
+
+
+DATA
+
+This demonstration will make use of the following data sources: Singapore Towns and median residential rental prices.
+Data will be retrieved from Singapore open dataset from median rent by town and flattype from https://data.gov.sg website.
+The original data source contains median rental prices of Singapore HDB units from 2005 up to 2nd quarter of 2018. 
+For this demonstration, I will simplify the analysis by using the average rental prices of all available flat type.
+Singapore Towns location data retrieved using Google maps API.
+Data coordinates of Town Venues will be retrieved using google API. 
+MRT stations coordinate as a more important center of for all towns included in venue recommendations.
+Singapore Top Venue Recommendations from FourSquare API (FourSquare website: www.foursquare.com). To explore neighborhoods in selected towns in Singapore. The Foursquare explore function will be used to get the most common venue categories in each neighborhood, and then use this feature to group the neighborhoods into clusters. The following information are retrieved on the first query: Venue ID. Venue Name. Coordinates : Latitude and Longitude. Category Name
+Another venue query will be performed to retrieve venue ratings for each location.
